@@ -26,33 +26,35 @@ def diagnose_car():
 
     """
     user_input = raw_input ("Is the car silent when you turn the key?")
-    # first yes branching
+    # First yes branching
     if user_input == ("Y"):
         user_input = raw_input ("Are the battery terminals corroded?")
-        if user_input == ("Y"):
-            print ('Clean terminals and try starting again.')
         if user_input == ("N"):
             print ("Replace cables and try again.")
-    # first no branching
-    if user_input == ("N"):
+        if user_input == ("Y"):
+            print ('Clean terminals and try starting again.')
+    # First no branching
+    # Had to use elif because if it is "if" then it recognized both N and printed both
+    elif user_input == ("N"):
         user_input = raw_input ("Does the car make a clicking noise?")
         if user_input == ("Y"):
             print ("Replace the battery.")
         if user_input == ("N"):
             user_input = raw_input ("Does the car crank up but fail to start?")
-            # another section on graph begins
+            # Another section on graph begins
             if user_input == ("Y"):
                 print ("Check spark plug connections.")
             if user_input == ("N"):
                 user_input = raw_input ("Does the engine start and then die?")
-                # another section on graph begins
+                # Another section on graph begins
                 if user_input == ("Y"):
                     user_input = raw_input ("Does your car have fuel injection?")
                     if user_input == ("N"):
                         print ("Check to ensure the choke is opening and closing.")
                     if user_input == "Y":
                         print ("Get it in for service.")
-                if user_input == ("N"):
-                    print ("Engine is not getting enough fue. Clean fuel pump.")
-diagnose_car()
+                elif user_input == ("N"):
+                    print ("Engine is not getting enough fuel. Clean fuel pump.")
+
+# diagnose_car()
 

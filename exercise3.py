@@ -25,8 +25,6 @@ def diagnose_car():
     Errors:
 
     """
-
-    print("The battery cables may be damaged. Replace cables and try again.")
 diagnose_car()
 
 user_input = raw_input ("Is the car silent when you turn the key?: ")

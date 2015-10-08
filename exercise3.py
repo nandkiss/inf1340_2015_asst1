@@ -35,23 +35,23 @@ if user_input == ("y"):
     if user_input == ("y"):
         print ("Clean terminals and try starting again.")
     if user_input == ("n"):
-        print ("replace cables and try again")
+        print ("Replace cables and try again.")
 if user_input == ("n"):
-    user_input = raw_input ("does the car make a clicking noise?")
+    user_input = raw_input ("Does the car make a clicking noise?: ")
     if user_input == ("y"):
-        print ("replace the battery")
+        print ("Replace the battery.")
     if user_input == ("n"):
-        user_input = raw_input ("does the car crank up but fail to start?")
+        user_input = raw_input ("Does the car crank up but fail to start?: ")
         if user_input == ("y"):
-            print ("check spark plug connections")
+            print ("Check spark plug connections.")
         if user_input == ("n"):
-            user_input: raw_input ("does the engine start and then die?")
+            user_input == raw_input ("Does the engine start and then die?: ")
             if user_input == ("y"):
-                user_input = raw_input ("does your car have fuel injection?")
+                user_input = raw_input ("Does your car have fuel injection?: ")
                 if user_input == ("n"):
-                    print ("check to ensure the choke is opening and closing")
+                    print ("Check to ensure the choke is opening and closing.")
                 if user_input == ("y"):
-                    print ("get it in for service")
-                    
+                    print ("Get it in for service.")
+
 
 

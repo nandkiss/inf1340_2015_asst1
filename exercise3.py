@@ -40,19 +40,19 @@ def diagnose_car():
             print ("Replace the battery.")
         if user_input == ("N"):
             user_input = raw_input ("Does the car crank up but fail to start?")
-    # another section
+            # another section on graph begins
             if user_input == ("Y"):
                 print ("Check spark plug connections.")
             if user_input == ("N"):
                 user_input = raw_input ("Does the engine start and then die?")
-    # another section
+                # another section on graph begins
                 if user_input == ("Y"):
                     user_input = raw_input ("Does your car have fuel injection?")
                     if user_input == ("N"):
                         print ("Check to ensure the choke is opening and closing.")
-                    if user_input == ("Y"):
+                    if user_input == "Y":
                         print ("Get it in for service.")
                 if user_input == ("N"):
                     print ("Engine is not getting enough fue. Clean fuel pump.")
-# diagnose_car()
+diagnose_car()
 

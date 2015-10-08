@@ -17,11 +17,11 @@ def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
 
-    Inputs:
+    Inputs: 3, 4, 5, 6, 7, 8, 9 or 10
 
-    Expected Outputs:
+    Expected Outputs: triangle, quadrilateral, pentagon, hexagon, heptagon, octagon, nonagon, decagon
 
-    Errors:
+    Errors: any number < 3 or > 10
 
     """
 

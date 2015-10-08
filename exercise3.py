@@ -18,11 +18,11 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs:
+    Inputs: y or n
 
-    Expected Outputs:
+    Expected Outputs: prompts regarding car diagnosis (eg: "Is the car silent when you turn the key?")
 
-    Errors:
+    Errors: anything other than y or n
 
     """
     user_input = raw_input ("Is the car silent when you turn the key?")

@@ -13,7 +13,7 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-#The variables needed to calculate this problem are number of shares, the price of the shares, and the commission owed
+# The variables needed to calculate this problem are number of shares, the price of the shares, and the commission owed
 #to the broker
 
 def calculate_investment (shares, price, commission):
@@ -22,19 +22,19 @@ def calculate_investment (shares, price, commission):
    total = before_commission - owed_to_broker
    return total
 
-#Plug in the values for shares, price and commission for her initial investment and her subsequent investment
+# Plug in the values for shares, price and commission for her initial investment and her subsequent investment
 initial_investment = calculate_investment(2000, 900, 0.03)
 subsequent_investment = calculate_investment(2000, 942.75, 0.03)
 
 # To find out if she made a profit, we look at the difference between her initial and subsequent investments
 transaction_difference = subsequent_investment - initial_investment
 
-#We added the string to indicate what this value represents. In order to do this, we changed transaction difference
+# We added the string to indicate what this value represents. In order to do this, we changed transaction difference
 # into a string.
 print("Money remaining after transaction " + str(transaction_difference))
 
-#If the transaction difference is greater than 1, it implies that she made money. If it is less than 1 (and therefore
-#a negative amount), it implies that she lost money.
+# If the transaction difference is greater than 1, it implies that she made money. If it is less than 1 (and therefore
+# a negative amount), it implies that she lost money.
 if transaction_difference > 1:
     print("Lakshmi made money")
 else:

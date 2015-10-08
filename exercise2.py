@@ -12,7 +12,7 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
-#test comment
+
 def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
@@ -25,8 +25,8 @@ def name_that_shape():
 
     """
 
+    # The program only takes input once and decides which shape it is based on # of sides
     shape = raw_input("Number of sides on shape between 3 and 10: ")
-
     if shape == ("3"):
         print ("triangle")
     elif shape == ("4"):
@@ -43,6 +43,7 @@ def name_that_shape():
         print ("nonagon")
     elif shape == ("10"):
         print ("decagon")
+    # the program only chooses shapes between 3-10 sides. Anything else will print 'Error'
     else:
         print ("Error")
 # name_that_shape ()

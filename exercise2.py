@@ -24,7 +24,6 @@ def name_that_shape():
     Errors:
 
     """
-
     print("Error")
 
 shape = raw_input ("Number of sides on shape between 3 and 10: ")

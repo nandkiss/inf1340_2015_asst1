@@ -54,7 +54,8 @@ if user_input == ("n"):
                     print ("Check to ensure the choke is opening and closing.")
                 if user_input == ("y"):
                     print ("Get it in for service.")
-
+            if user_input == ("n"):
+                print ("Error.")
 
 
 

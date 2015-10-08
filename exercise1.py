@@ -23,17 +23,17 @@ amount_of_shares_purchased = 2000
 amount_of_shares_sold = 2000
 
 initial_investment = original_stock_price * amount_of_shares_purchased
-money_remaining_after_purchase = initial_investment - initial_investment * commission
-print("Money invested on stock purchase ") + str(money_remaining_after_purchase)
+initial_investment = initial_investment - initial_investment * commission
+print("Money invested on stock purchase ") + str(initial_investment)
 
 
 subsequent_investment = subsequent_stock_price * amount_of_shares_sold
-money_remaining_after_sale = subsequent_investment - subsequent_investment * commission
-print("Money made on stock sale ") + str(money_remaining_after_sale)
+subsequent_investment = subsequent_investment - subsequent_investment * commission
+print("Money made on stock sale ") + str(subsequent_investment)
 
 
 
-final_transaction_amount = money_remaining_after_sale - money_remaining_after_purchase
+final_transaction_amount = subsequent_investment - initial_investment
 print("Final transaction amount ") + str(final_transaction_amount)
 
 

@@ -16,3 +16,39 @@ __license__ = "MIT License"
 money = 1000.00
 print(money)
 
+original_stock_price = 900
+subsequent_stock_price = 942.75
+commission = 0.03
+amount_of_shares_purchased = 2000
+amount_of_shares_sold = 2000
+
+initial_investment = original_stock_price * amount_of_shares_purchased
+money_remaining_after_purchase = initial_investment - initial_investment * commission
+print("Money invested on stock purchase ") + str(money_remaining_after_purchase)
+
+
+subsequent_investment = subsequent_stock_price * amount_of_shares_sold
+money_remaining_after_sale = subsequent_investment - subsequent_investment * commission
+print("Money made on stock sale ") + str(money_remaining_after_sale)
+
+
+
+final_transaction_amount = money_remaining_after_sale - money_remaining_after_purchase
+print("Final transaction amount ") + str(final_transaction_amount)
+
+
+def calculate_investment (shares, price, commission):
+   before_commission = shares * price
+   owed_to_broker = before_commission * commission
+   total = before_commission - owed_to_broker
+   return total
+
+initial_investment = calculate_investment(2000, 900, 0.03)
+subsequent_investment = calculate_investment(2000, 942.75, 0.03)
+
+if subsequent_investment < initial_investment:
+   print("Lakshmi lost money")
+else:
+   print("Lakshmi made money")
+
+

@@ -11,7 +11,6 @@ import pytest
 import mock
 from exercise3 import diagnose_car
 
-
 def test_accepted_inputs(capsys):
 
     with mock.patch("__builtin__.raw_input", side_effect=["Y", "Y"]):

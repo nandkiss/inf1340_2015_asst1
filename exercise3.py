@@ -25,34 +25,34 @@ def diagnose_car():
     Errors:
 
     """
-    user_input = raw_input ("Is the car silent when you turn the key?: ")
+    user_input = raw_input ("Is the car silent when you turn the key?")
     # first yes branching
-    if user_input == ("y"):
-        user_input = raw_input ("Are the battery terminals corroded?: ")
-        if user_input == ("y"):
-            print ("Clean terminals and try starting again.")
-        if user_input == ("n"):
+    if user_input == ("Y"):
+        user_input = raw_input ("Are the battery terminals corroded?")
+        if user_input == ("Y"):
+            print ('Clean terminals and try starting again.')
+        if user_input == ("N"):
             print ("Replace cables and try again.")
     # first no branching
-    if user_input == ("n"):
-        user_input = raw_input ("Does the car make a clicking noise?: ")
-        if user_input == ("y"):
+    if user_input == ("N"):
+        user_input = raw_input ("Does the car make a clicking noise?")
+        if user_input == ("Y"):
             print ("Replace the battery.")
-        if user_input == ("n"):
-            user_input = raw_input ("Does the car crank up but fail to start?: ")
+        if user_input == ("N"):
+            user_input = raw_input ("Does the car crank up but fail to start?")
     # another section
-            if user_input == ("y"):
+            if user_input == ("Y"):
                 print ("Check spark plug connections.")
-            if user_input == ("n"):
-                user_input = raw_input ("Does the engine start and then die?: ")
+            if user_input == ("N"):
+                user_input = raw_input ("Does the engine start and then die?")
     # another section
-                if user_input == ("y"):
-                    user_input = raw_input ("Does your car have fuel injection?: ")
-                    if user_input == ("n"):
+                if user_input == ("Y"):
+                    user_input = raw_input ("Does your car have fuel injection?")
+                    if user_input == ("N"):
                         print ("Check to ensure the choke is opening and closing.")
-                    if user_input == ("y"):
+                    if user_input == ("Y"):
                         print ("Get it in for service.")
-                if user_input == ("n"):
-                    print ("Error.")
+                if user_input == ("N"):
+                    print ("Engine is not getting enough fue. Clean fuel pump.")
 # diagnose_car()
 

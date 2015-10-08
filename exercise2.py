@@ -42,5 +42,5 @@ def name_that_shape():
     if shape == ("10"):
         print ("decagon")
     else:
-        print ("error")
+        print ("Error")
 # name_that_shape ()

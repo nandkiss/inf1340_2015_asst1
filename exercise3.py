@@ -42,6 +42,16 @@ if user_input == ("n"):
         print ("replace the battery")
     if user_input == ("n"):
         user_input = raw_input ("does the car crank up but fail to start?")
-        
+        if user_input == ("y"):
+            print ("check spark plug connections")
+        if user_input == ("n"):
+            user_input: raw_input ("does the engine start and then die?")
+            if user_input == ("y"):
+                user_input = raw_input ("does your car have fuel injection?")
+                if user_input == ("n"):
+                    print ("check to ensure the choke is opening and closing")
+                if user_input == ("y"):
+                    print ("get it in for service")
+                    
 
 

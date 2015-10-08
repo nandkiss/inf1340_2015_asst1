@@ -27,8 +27,6 @@ def name_that_shape():
 
     print("Error")
 
-name_that_shape()
-
 shape = raw_input ("Number of sides on shape between 3 and 10: ")
 if shape == ("3"):
     print ("Triangle")
@@ -48,4 +46,4 @@ elif shape == ("10"):
     print ("Decagon")
 else:
     print ("Error")
-
+name_that_shape()

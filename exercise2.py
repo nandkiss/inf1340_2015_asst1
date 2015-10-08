@@ -24,25 +24,23 @@ def name_that_shape():
     Errors:
 
     """
-    print("Error")
-
-shape = raw_input ("Number of sides on shape between 3 and 10: ")
-if shape == ("3"):
-    print ("Triangle")
-elif shape == ("4"):
-    print ("Quadrilateral")
-elif shape == ("5"):
-    print ("Pentagon")
-elif shape == ("6"):
-    print ("Hexagon")
-elif shape == ("7"):
-    print ("Heptagon")
-elif shape == ("8"):
-    print ("Octagon")
-elif shape == ("9"):
-    print ("Nonagon")
-elif shape == ("10"):
-    print ("Decagon")
-else:
-    print ("Error")
-name_that_shape ()
+    shape = raw_input ("Number of sides on shape between 3 and 10: ")
+    if shape == ("3"):
+        print ("triangle")
+    if shape == ("4"):
+        print ("quadrilateral")
+    if shape == ("5"):
+        print ("pentagon")
+    if shape == ("6"):
+        print ("hexagon")
+    if shape == ("7"):
+        print ("heptagon")
+    if shape == ("8"):
+        print ("octagon")
+    if shape == ("9"):
+        print ("nonagon")
+    if shape == ("10"):
+        print ("decagon")
+    else:
+        print ("error")
+# name_that_shape ()
